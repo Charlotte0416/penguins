@@ -385,6 +385,9 @@ fishes.</p>
 
 pen_no_na %&gt;% ggplot(aes(x = sex, y = bill_length_mm, color = species)) + geom_point()</code></pre>
 <p><img src="penguins_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="island-variance" class="section level2">
+<h2>Island variance</h2>
 <pre class="r"><code>penguins %&gt;%
   ggplot(mapping = aes(x = body_mass_g, y=bill_depth_mm, color=island, size=bill_length_mm)) +
   geom_point()+
