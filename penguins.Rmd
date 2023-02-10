@@ -42,6 +42,9 @@ pen_no_na <- penguins %>% filter(!is.na(sex))
 pen_no_na %>% ggplot(aes(x = sex, y = bill_length_mm, color = species)) + geom_point()
 ```
 
+
+## Island variance
+
 ```{r}
 penguins %>%
   ggplot(mapping = aes(x = body_mass_g, y=bill_depth_mm, color=island, size=bill_length_mm)) +
