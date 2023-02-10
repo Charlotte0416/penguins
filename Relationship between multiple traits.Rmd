@@ -1,0 +1,16 @@
+---
+title: "Relationship between multiple traits"
+author: "Charlotte"
+date: "2023-02-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+penguins %>% ggplot(aes(x = year, y = body_mass_g, color = species)) + geom_point()
+```

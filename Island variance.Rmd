@@ -1,0 +1,18 @@
+---
+title: "Island variance"
+author: "Charlotte"
+date: "2023-02-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+penguins %>%
+  ggplot(mapping = aes(x = body_mass_g, y=bill_depth_mm, color=island, size=bill_length_mm)) +
+  geom_point()+
+  facet_wrap(~species)
+```

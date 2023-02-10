@@ -1,0 +1,17 @@
+---
+title: "Sexual dimorphism"
+author: "Charlotte"
+date: "2023-02-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+pen_no_na <- penguins %>% filter(!is.na(sex))
+
+pen_no_na %>% ggplot(aes(x = sex, y = bill_length_mm, color = species)) + geom_point()
+```

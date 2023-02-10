@@ -13,7 +13,7 @@
 
 <meta name="date" content="2023-02-10" />
 
-<title>penguins</title>
+<title>Sexual dimorphism</title>
 
 <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -268,51 +268,17 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">penguins</h1>
+<h1 class="title toc-ignore">Sexual dimorphism</h1>
 <h4 class="author">Charlotte</h4>
 <h4 class="date">2023-02-10</h4>
 
 </div>
 
 
-<div id="data" class="section level2">
-<h2>Data</h2>
-<center>
-<div class="figure">
-<img
-src="https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png"
-alt="" />
-<p class="caption">A photo of a bill</p>
-</div>
-<p>The penguins are black and white little fat birds that eat
-fishes.</p>
-</div>
-<div id="single-trait-distribution" class="section level2">
-<h2>Single trait distribution</h2>
-<pre class="r"><code>ggplot(data = penguins)+
-  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, size = year, color = species))</code></pre>
-<pre><code>## Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-</div>
-<div id="relationship-between-multiple-traits" class="section level2">
-<h2>Relationship between multiple traits</h2>
-<pre class="r"><code>penguins %&gt;% ggplot(aes(x = year, y = body_mass_g, color = species)) + geom_point()</code></pre>
-<pre><code>## Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-</div>
-<div id="sexual-dimorphism" class="section level2">
-<h2>Sexual dimorphism</h2>
 <pre class="r"><code>pen_no_na &lt;- penguins %&gt;% filter(!is.na(sex))
 
 pen_no_na %&gt;% ggplot(aes(x = sex, y = bill_length_mm, color = species)) + geom_point()</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<pre class="r"><code>penguins %&gt;%
-  ggplot(mapping = aes(x = body_mass_g, y=bill_depth_mm, color=island, size=bill_length_mm)) +
-  geom_point()+
-  facet_wrap(~species)</code></pre>
-<pre><code>## Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-</div>
+<p><img src="Sexual-dimorphism_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 
 
 
