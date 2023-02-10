@@ -7,7 +7,9 @@ navbar:
     - text: "Data"
       href: Data.html
     - text: "Relationship between multiple traits"
-      href: Relationship between multiple traits.html
+      href: Relationship-between-multiple-traits.html
     - text: "Sexual dimorphism"
-      href: Sexual dimorphism.html
+      href: Sexual-dimorphism.html
+    - text: "Island variance"
+      href: Island-variance.html
 output_dir: "."
