@@ -1,0 +1,16 @@
+---
+title: "Data"
+author: "Charlotte"
+date: "2023-02-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+<center>![A photo of a bill](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
+
+The penguins are black and white little fat birds that eat fishes.
