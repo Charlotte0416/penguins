@@ -1,0 +1,61 @@
+---
+title: "penguins"
+author: "Charlotte"
+date: "2023-02-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+
+## Data
+
+<center>![A photo of a bill](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
+
+The penguins are black and white little fat birds that eat fishes.
+
+## Single trait distribution
+
+```{r}
+
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x = body_mass_g, y = bill_length_mm, size = year, color = species))
+```
+
+## Relationship between multiple traits
+
+```{r}
+
+penguins %>% ggplot(aes(x = year, y = body_mass_g, color = species)) + geom_point()
+```
+
+
+## Sexual dimorphism
+
+```{r}
+pen_no_na <- penguins %>% filter(!is.na(sex))
+
+pen_no_na %>% ggplot(aes(x = sex, y = bill_length_mm, color = species)) + geom_point()
+```
+
+```{r}
+penguins %>%
+  ggplot(mapping = aes(x = body_mass_g, y=bill_depth_mm, color=island, size=bill_length_mm)) +
+  geom_point()+
+  facet_wrap(~species)
+```
+
+
+
+
+
+
+
+
+
+
+

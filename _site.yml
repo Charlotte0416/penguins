@@ -1,0 +1,13 @@
+name: "Penguins-website"
+navbar:
+  title: "Penguins Kindom"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Data"
+      href: Data.html
+    - text: "Relationship between multiple traits"
+      href: Relationship between multiple traits.html
+    - text: "Sexual dimorphism"
+      href: Sexual dimorphism.html
+output_dir: "."
