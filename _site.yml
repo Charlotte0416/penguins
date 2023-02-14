@@ -13,6 +13,7 @@ navbar:
     - text: "Island variance"
       href: Island-variance.html
 output_dir: "."
+
 output:
   html_document:
     theme: cerulean
