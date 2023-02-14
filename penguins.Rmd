@@ -18,7 +18,7 @@ library(tidyverse)
 
 The penguins are black and white little fat birds that eat fishes.
 
-## Single trait distribution
+## Single Trait distribution
 
 ```{r}
 
